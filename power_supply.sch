@@ -4,11 +4,11 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
-Title "WIFI-CAN-Dongle"
-Date "2018-09-30"
+Sheet 4 4
+Title "WIFI-CAN-Dongle Basic"
+Date "2018-10-03"
 Rev "v1.0"
-Comp ""
+Comp "bytewerk - www.bytewerk.org"
 Comment1 ""
 Comment2 "Stephan Hültl"
 Comment3 ""
@@ -56,8 +56,6 @@ Wire Wire Line
 Wire Wire Line
 	1950 1400 1950 2350
 Wire Wire Line
-	1600 1700 3100 1700
-Wire Wire Line
 	1600 1200 2300 1200
 Wire Wire Line
 	1600 1300 2500 1300
@@ -73,6 +71,7 @@ F 0 "D4" H 2625 2100 50  0000 L CNN
 F 1 "NUP2105L" H 2625 2025 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 2625 1950 50  0001 L CNN
 F 3 "http://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF" H 2525 2125 50  0001 C CNN
+F 4 "NUP2105L" H 2400 2000 50  0001 C CNN "MPN"
 	1    2400 2000
 	1    0    0    -1  
 $EndComp
@@ -153,481 +152,8 @@ Wire Wire Line
 	3500 2300 3500 2150
 Text GLabel 3750 2300 2    50   Output ~ 0
 BAT_ADC_IN
-$Comp
-L bytewerk-discrete:C C?
-U 1 1 5BB05C6D
-P 3700 5200
-AR Path="/5BAFEFFB/5BB05C6D" Ref="C?"  Part="1" 
-AR Path="/5BAFF001/5BB05C6D" Ref="C10"  Part="1" 
-F 0 "C10" H 3725 5300 50  0000 L CNN
-F 1 "10u/25V" H 3725 5100 50  0000 L CNN
-F 2 "bytewerk_capacitors:C_0805_2012Metric" H 3738 5050 50  0001 C CNN
-F 3 "~" H 3700 5200 50  0001 C CNN
-	1    3700 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L bytewerk-discrete:C C?
-U 1 1 5BB05C74
-P 6750 3850
-AR Path="/5BAFEFFB/5BB05C74" Ref="C?"  Part="1" 
-AR Path="/5BAFF001/5BB05C74" Ref="C13"  Part="1" 
-F 0 "C13" H 6775 3950 50  0000 L CNN
-F 1 "100n/25V" H 6775 3750 50  0000 L CNN
-F 2 "bytewerk_capacitors:C_0603_1608Metric" H 6788 3700 50  0001 C CNN
-F 3 "~" H 6750 3850 50  0001 C CNN
-	1    6750 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BB05C7B
-P 3700 5450
-AR Path="/5BAFEFFB/5BB05C7B" Ref="#PWR?"  Part="1" 
-AR Path="/5BAFF001/5BB05C7B" Ref="#PWR0130"  Part="1" 
-F 0 "#PWR0130" H 3700 5200 50  0001 C CNN
-F 1 "GND" H 3700 5300 50  0000 C CNN
-F 2 "" H 3700 5450 50  0001 C CNN
-F 3 "" H 3700 5450 50  0001 C CNN
-	1    3700 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 5350 3700 5450
-$Comp
-L power:GND #PWR?
-U 1 1 5BB06BD5
-P 5750 5200
-AR Path="/5BAFEFFB/5BB06BD5" Ref="#PWR?"  Part="1" 
-AR Path="/5BAFF001/5BB06BD5" Ref="#PWR0133"  Part="1" 
-F 0 "#PWR0133" H 5750 4950 50  0001 C CNN
-F 1 "GND" H 5750 5050 50  0000 C CNN
-F 2 "" H 5750 5200 50  0001 C CNN
-F 3 "" H 5750 5200 50  0001 C CNN
-	1    5750 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L bytewerk-discrete:C C?
-U 1 1 5BB06EB0
-P 9300 4750
-AR Path="/5BAFEFFB/5BB06EB0" Ref="C?"  Part="1" 
-AR Path="/5BAFF001/5BB06EB0" Ref="C15"  Part="1" 
-F 0 "C15" H 9325 4850 50  0000 L CNN
-F 1 "10u/25V" H 9325 4650 50  0000 L CNN
-F 2 "bytewerk_capacitors:C_0805_2012Metric" H 9338 4600 50  0001 C CNN
-F 3 "~" H 9300 4750 50  0001 C CNN
-	1    9300 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BB06EB7
-P 9300 5400
-AR Path="/5BAFEFFB/5BB06EB7" Ref="#PWR?"  Part="1" 
-AR Path="/5BAFF001/5BB06EB7" Ref="#PWR0134"  Part="1" 
-F 0 "#PWR0134" H 9300 5150 50  0001 C CNN
-F 1 "GND" H 9300 5250 50  0000 C CNN
-F 2 "" H 9300 5400 50  0001 C CNN
-F 3 "" H 9300 5400 50  0001 C CNN
-	1    9300 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0135
-U 1 1 5BB07513
-P 9300 4100
-F 0 "#PWR0135" H 9300 3950 50  0001 C CNN
-F 1 "+3V3" H 9300 4240 50  0000 C CNN
-F 2 "" H 9300 4100 50  0001 C CNN
-F 3 "" H 9300 4100 50  0001 C CNN
-	1    9300 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L bytewerk-vreg:LT8607 U4
-U 1 1 5BB4EBF0
-P 5750 4500
-F 0 "U4" H 5350 5000 50  0000 L CNN
-F 1 "LT8607" H 5850 4000 50  0000 L CNN
-F 2 "Package_SO:MSOP-10-1EP_3x3mm_P0.5mm_EP1.68x1.88mm" H 5850 3900 50  0001 L CNN
-F 3 "" H 5350 4400 50  0001 C CNN
-	1    5750 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5750 5200 5750 5100
-$Comp
-L power:+12V #PWR02
-U 1 1 5BB562BC
-P 3700 3900
-F 0 "#PWR02" H 3700 3750 50  0001 C CNN
-F 1 "+12V" H 3700 4040 50  0000 C CNN
-F 2 "" H 3700 3900 50  0001 C CNN
-F 3 "" H 3700 3900 50  0001 C CNN
-	1    3700 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 4150 3700 3900
-Wire Wire Line
-	3700 4150 3700 5050
-Connection ~ 3700 4150
-$Comp
-L bytewerk-discrete:R R24
-U 1 1 5BB57782
-P 3100 4550
-F 0 "R24" V 3180 4550 50  0000 C CNN
-F 1 "1M" V 3100 4550 50  0000 C CNN
-F 2 "bytewerk_resistors:R_0603_1608Metric" V 3030 4550 50  0001 C CNN
-F 3 "~" H 3100 4550 50  0001 C CNN
-	1    3100 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L bytewerk-discrete:R R25
-U 1 1 5BB57789
-P 3100 5150
-F 0 "R25" V 3180 5150 50  0000 C CNN
-F 1 "120k" V 3100 5150 50  0000 C CNN
-F 2 "bytewerk_resistors:R_0603_1608Metric" V 3030 5150 50  0001 C CNN
-F 3 "~" H 3100 5150 50  0001 C CNN
-	1    3100 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5BB57790
-P 3100 5450
-F 0 "#PWR01" H 3100 5200 50  0001 C CNN
-F 1 "GND" H 3100 5300 50  0000 C CNN
-F 2 "" H 3100 5450 50  0001 C CNN
-F 3 "" H 3100 5450 50  0001 C CNN
-	1    3100 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 5300 3100 5450
-Wire Wire Line
-	3100 4700 3100 4850
-Wire Wire Line
-	3450 4850 3100 4850
-Connection ~ 3100 4850
-Wire Wire Line
-	3100 4850 3100 5000
-Connection ~ 3100 1700
-Wire Wire Line
-	3100 1700 3500 1700
-Wire Wire Line
-	6300 4150 6450 4150
-Wire Wire Line
-	6450 4150 6450 3550
-Wire Wire Line
-	6450 3550 6750 3550
-Wire Wire Line
-	6750 3550 6750 3700
-Wire Wire Line
-	6300 4250 6750 4250
-Wire Wire Line
-	6750 4250 6750 4000
-$Comp
-L Device:L L3
-U 1 1 5BB5BEFA
-P 7150 4250
-F 0 "L3" V 7100 4250 50  0000 C CNN
-F 1 "XFL3012-222ME" V 7225 4250 50  0000 C CNN
-F 2 "bytewerk-inductors:L_Coilcraft_XLF3012" H 7150 4250 50  0001 C CNN
-F 3 "~" H 7150 4250 50  0001 C CNN
-	1    7150 4250
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6750 4250 7000 4250
-Connection ~ 6750 4250
-Wire Wire Line
-	7300 4250 7500 4250
-Wire Wire Line
-	9300 4250 9300 4100
-Wire Wire Line
-	9300 4600 9300 4250
-Connection ~ 9300 4250
-$Comp
-L bytewerk-discrete:C C?
-U 1 1 5BB5E94F
-P 9850 4750
-AR Path="/5BAFEFFB/5BB5E94F" Ref="C?"  Part="1" 
-AR Path="/5BAFF001/5BB5E94F" Ref="C16"  Part="1" 
-F 0 "C16" H 9875 4850 50  0000 L CNN
-F 1 "10u/25V" H 9875 4650 50  0000 L CNN
-F 2 "bytewerk_capacitors:C_0805_2012Metric" H 9888 4600 50  0001 C CNN
-F 3 "~" H 9850 4750 50  0001 C CNN
-	1    9850 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9850 4600 9850 4250
-Wire Wire Line
-	9850 4250 9300 4250
-$Comp
-L bytewerk-discrete:R R31
-U 1 1 5BB600EF
-P 7500 4550
-F 0 "R31" V 7580 4550 50  0000 C CNN
-F 1 "82k" V 7500 4550 50  0000 C CNN
-F 2 "bytewerk_resistors:R_0603_1608Metric" V 7430 4550 50  0001 C CNN
-F 3 "~" H 7500 4550 50  0001 C CNN
-	1    7500 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6300 4800 7500 4800
-Wire Wire Line
-	7500 4800 7500 4700
-Wire Wire Line
-	7500 4400 7500 4250
-Connection ~ 7500 4250
-Wire Wire Line
-	7500 4250 8500 4250
-Wire Wire Line
-	7500 4800 7650 4800
-Connection ~ 7500 4800
-Text HLabel 7650 4800 2    50   Output ~ 0
-Power_Good
-$Comp
-L bytewerk-discrete:R R32
-U 1 1 5BB64679
-P 8500 4500
-F 0 "R32" V 8580 4500 50  0000 C CNN
-F 1 "1M" V 8500 4500 50  0000 C CNN
-F 2 "bytewerk_resistors:R_0603_1608Metric" V 8430 4500 50  0001 C CNN
-F 3 "~" H 8500 4500 50  0001 C CNN
-	1    8500 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L bytewerk-discrete:R R33
-U 1 1 5BB64827
-P 8500 5000
-F 0 "R33" V 8580 5000 50  0000 C CNN
-F 1 "309k" V 8500 5000 50  0000 C CNN
-F 2 "bytewerk_resistors:R_0603_1608Metric" V 8430 5000 50  0001 C CNN
-F 3 "~" H 8500 5000 50  0001 C CNN
-	1    8500 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L bytewerk-discrete:C C?
-U 1 1 5BB653AF
-P 8800 4500
-AR Path="/5BAFEFFB/5BB653AF" Ref="C?"  Part="1" 
-AR Path="/5BAFF001/5BB653AF" Ref="C14"  Part="1" 
-F 0 "C14" H 8825 4600 50  0000 L CNN
-F 1 "10p/50V" H 8825 4400 50  0000 L CNN
-F 2 "bytewerk_capacitors:C_0603_1608Metric" H 8838 4350 50  0001 C CNN
-F 3 "~" H 8800 4500 50  0001 C CNN
-	1    8800 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8500 4650 8500 4750
-Wire Wire Line
-	8500 4350 8500 4250
-Connection ~ 8500 4250
-Wire Wire Line
-	8500 4250 8800 4250
-Wire Wire Line
-	8800 4350 8800 4250
-Connection ~ 8800 4250
-Wire Wire Line
-	8800 4250 9300 4250
-Wire Wire Line
-	8800 4650 8800 4750
-Wire Wire Line
-	8800 4750 8500 4750
-Connection ~ 8500 4750
-Wire Wire Line
-	8500 4750 8500 4850
-$Comp
-L power:GND #PWR?
-U 1 1 5BB6814A
-P 8500 5400
-AR Path="/5BAFEFFB/5BB6814A" Ref="#PWR?"  Part="1" 
-AR Path="/5BAFF001/5BB6814A" Ref="#PWR06"  Part="1" 
-F 0 "#PWR06" H 8500 5150 50  0001 C CNN
-F 1 "GND" H 8500 5250 50  0000 C CNN
-F 2 "" H 8500 5400 50  0001 C CNN
-F 3 "" H 8500 5400 50  0001 C CNN
-	1    8500 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8500 5400 8500 5150
-Wire Wire Line
-	8500 4750 8300 4750
-Wire Wire Line
-	8300 4750 8300 5050
-Wire Wire Line
-	8300 5050 6850 5050
-Wire Wire Line
-	6850 5050 6850 4450
-Wire Wire Line
-	6850 4450 6300 4450
-Text Notes 3000 4850 2    50   ~ 0
-Voltage regulator will be \nshut down below 9V of V_BAT\nVin(en) around 9,33V
 Text Label 3100 1700 0    50   ~ 0
 V_BAT
-Wire Wire Line
-	9300 4900 9300 5400
-$Comp
-L power:GND #PWR?
-U 1 1 5BB70596
-P 9850 5400
-AR Path="/5BAFEFFB/5BB70596" Ref="#PWR?"  Part="1" 
-AR Path="/5BAFF001/5BB70596" Ref="#PWR07"  Part="1" 
-F 0 "#PWR07" H 9850 5150 50  0001 C CNN
-F 1 "GND" H 9850 5250 50  0000 C CNN
-F 2 "" H 9850 5400 50  0001 C CNN
-F 3 "" H 9850 5400 50  0001 C CNN
-	1    9850 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9850 4900 9850 5400
-Wire Wire Line
-	3100 1700 3100 4400
-$Comp
-L bytewerk-discrete:C C?
-U 1 1 5BB726E7
-P 4200 5200
-AR Path="/5BAFEFFB/5BB726E7" Ref="C?"  Part="1" 
-AR Path="/5BAFF001/5BB726E7" Ref="C11"  Part="1" 
-F 0 "C11" H 4225 5300 50  0000 L CNN
-F 1 "1u/25V" H 4225 5100 50  0000 L CNN
-F 2 "bytewerk_capacitors:C_0603_1608Metric" H 4238 5050 50  0001 C CNN
-F 3 "~" H 4200 5200 50  0001 C CNN
-	1    4200 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BB7272B
-P 4200 5450
-AR Path="/5BAFEFFB/5BB7272B" Ref="#PWR?"  Part="1" 
-AR Path="/5BAFF001/5BB7272B" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 4200 5200 50  0001 C CNN
-F 1 "GND" H 4200 5300 50  0000 C CNN
-F 2 "" H 4200 5450 50  0001 C CNN
-F 3 "" H 4200 5450 50  0001 C CNN
-	1    4200 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 5450 4200 5350
-Wire Wire Line
-	4200 5050 4200 4600
-Wire Wire Line
-	4200 4600 5200 4600
-Wire Wire Line
-	3450 4850 3450 4250
-Wire Wire Line
-	3450 4250 5200 4250
-Wire Wire Line
-	3700 4150 4600 4150
-$Comp
-L bytewerk-discrete:C C?
-U 1 1 5BB77A57
-P 4650 5200
-AR Path="/5BAFEFFB/5BB77A57" Ref="C?"  Part="1" 
-AR Path="/5BAFF001/5BB77A57" Ref="C12"  Part="1" 
-F 0 "C12" H 4675 5300 50  0000 L CNN
-F 1 "10n/25V" H 4675 5100 50  0000 L CNN
-F 2 "bytewerk_capacitors:C_0603_1608Metric" H 4688 5050 50  0001 C CNN
-F 3 "~" H 4650 5200 50  0001 C CNN
-	1    4650 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BB77A9F
-P 4650 5450
-AR Path="/5BAFEFFB/5BB77A9F" Ref="#PWR?"  Part="1" 
-AR Path="/5BAFF001/5BB77A9F" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 4650 5200 50  0001 C CNN
-F 1 "GND" H 4650 5300 50  0000 C CNN
-F 2 "" H 4650 5450 50  0001 C CNN
-F 3 "" H 4650 5450 50  0001 C CNN
-	1    4650 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 5350 4650 5450
-Wire Wire Line
-	4650 5050 4650 4700
-Wire Wire Line
-	4650 4700 5200 4700
-$Comp
-L bytewerk-discrete:R R29
-U 1 1 5BB79E87
-P 5100 5200
-F 0 "R29" V 5180 5200 50  0000 C CNN
-F 1 "18k" V 5100 5200 50  0000 C CNN
-F 2 "bytewerk_resistors:R_0603_1608Metric" V 5030 5200 50  0001 C CNN
-F 3 "~" H 5100 5200 50  0001 C CNN
-	1    5100 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BB79EEF
-P 5100 5900
-AR Path="/5BAFEFFB/5BB79EEF" Ref="#PWR?"  Part="1" 
-AR Path="/5BAFF001/5BB79EEF" Ref="#PWR05"  Part="1" 
-F 0 "#PWR05" H 5100 5650 50  0001 C CNN
-F 1 "GND" H 5100 5750 50  0000 C CNN
-F 2 "" H 5100 5900 50  0001 C CNN
-F 3 "" H 5100 5900 50  0001 C CNN
-	1    5100 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 5050 5100 4800
-Wire Wire Line
-	5100 4800 5200 4800
-$Comp
-L bytewerk-discrete:R R30
-U 1 1 5BB7DC5E
-P 5100 5600
-F 0 "R30" V 5180 5600 50  0000 C CNN
-F 1 "200R" V 5100 5600 50  0000 C CNN
-F 2 "bytewerk_resistors:R_0603_1608Metric" V 5030 5600 50  0001 C CNN
-F 3 "~" H 5100 5600 50  0001 C CNN
-	1    5100 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 5450 5100 5350
-Wire Wire Line
-	5100 5750 5100 5900
-$Comp
-L bytewerk-discrete:R R28
-U 1 1 5BB80F0C
-P 4850 4350
-F 0 "R28" V 4930 4350 50  0000 C CNN
-F 1 "n.b." V 4850 4350 50  0000 C CNN
-F 2 "bytewerk_resistors:R_0603_1608Metric" V 4780 4350 50  0001 C CNN
-F 3 "~" H 4850 4350 50  0001 C CNN
-	1    4850 4350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5200 4350 5000 4350
-Wire Wire Line
-	4700 4350 4600 4350
-Wire Wire Line
-	4600 4350 4600 4150
-Connection ~ 4600 4150
-Wire Wire Line
-	4600 4150 5200 4150
 $Comp
 L power:+3V3 #PWR0116
 U 1 1 5BB8A050
@@ -687,4 +213,62 @@ F 3 "http://www.vishay.com/docs/88946/b120.pdf" H 3900 1700 50  0001 C CNN
 	1    3900 1700
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	1600 1700 3500 1700
+$Comp
+L bytewerk-vreg:OKI-78SR U4
+U 1 1 5BB8F50D
+P 5550 3600
+F 0 "U4" H 5400 3725 50  0000 C CNN
+F 1 "OKI-78SR" H 5550 3725 50  0000 L CNN
+F 2 "bytewerk-TO-packages:TO-220-3_Horizontal_TabDown" H 5575 3450 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5550 3550 50  0001 C CNN
+	1    5550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5BB8F5C0
+P 5550 4150
+F 0 "#PWR05" H 5550 3900 50  0001 C CNN
+F 1 "GND" H 5550 4000 50  0000 C CNN
+F 2 "" H 5550 4150 50  0001 C CNN
+F 3 "" H 5550 4150 50  0001 C CNN
+	1    5550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4150 5550 3900
+$Comp
+L power:+12V #PWR04
+U 1 1 5BB8F77E
+P 5050 3450
+F 0 "#PWR04" H 5050 3300 50  0001 C CNN
+F 1 "+12V" H 5050 3590 50  0000 C CNN
+F 2 "" H 5050 3450 50  0001 C CNN
+F 3 "" H 5050 3450 50  0001 C CNN
+	1    5050 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3450 5050 3600
+Wire Wire Line
+	5050 3600 5250 3600
+$Comp
+L power:+3V3 #PWR06
+U 1 1 5BB8F9EB
+P 6200 3450
+F 0 "#PWR06" H 6200 3300 50  0001 C CNN
+F 1 "+3V3" H 6200 3590 50  0000 C CNN
+F 2 "" H 6200 3450 50  0001 C CNN
+F 3 "" H 6200 3450 50  0001 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3450 6200 3600
+Wire Wire Line
+	6200 3600 5850 3600
+Text Notes 6000 3900 0    50   ~ 0
+add heat shrink tube to OKI
 $EndSCHEMATC

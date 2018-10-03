@@ -4,11 +4,11 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
-Title "WIFI-CAN-Dongle"
-Date "2018-09-30"
+Sheet 3 4
+Title "WIFI-CAN-Dongle Basic"
+Date "2018-10-03"
 Rev "v1.0"
-Comp ""
+Comp "bytewerk - www.bytewerk.org"
 Comment1 ""
 Comment2 "Stephan Hültl"
 Comment3 ""
@@ -22,6 +22,7 @@ F 0 "U2" H 5300 3850 50  0000 R CNN
 F 1 "SN65HVD230DR" H 6100 3250 50  0000 R CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5500 3100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf" H 5400 4000 50  0001 C CNN
+F 4 "SN65HVD230DR" H 5500 3600 50  0001 C CNN "MPN"
 	1    5500 3600
 	1    0    0    -1  
 $EndComp
@@ -172,6 +173,7 @@ F 0 "U3" H 7550 3945 50  0000 L CNN
 F 1 "TLP175A" H 7550 3550 50  0000 L CNN
 F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 7750 3450 50  0001 C CIN
 F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=13665&prodName=TLP175A" H 7700 3750 50  0001 L CNN
+F 4 "TLP175A" H 7750 3750 50  0001 C CNN "MPN"
 	1    7750 3750
 	1    0    0    -1  
 $EndComp

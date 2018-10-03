@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
-Title "WIFI-CAN-Dongle"
-Date "2018-09-30"
+Title "WIFI-CAN-Dongle Basic"
+Date "2018-10-03"
 Rev "v1.0"
-Comp ""
+Comp "bytewerk - www.bytewerk.org"
 Comment1 ""
 Comment2 "Stephan Hültl"
 Comment3 ""
@@ -22,6 +22,7 @@ F 0 "J4" H 950 3200 50  0000 L CNN
 F 1 "USB_B_Micro" H 950 3100 50  0000 L CNN
 F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521_CircularHoles" H 1300 2700 50  0001 C CNN
 F 3 "~" H 1300 2700 50  0001 C CNN
+F 4 "629105150521" H 1150 2750 50  0001 C CNN "MPN"
 	1    1150 2750
 	1    0    0    -1  
 $EndComp
@@ -165,6 +166,7 @@ F 0 "U5" H 1950 5150 50  0000 C CNN
 F 1 "USBLC6-2SC6" H 2150 4400 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 1000 5200 50  0001 C CNN
 F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 1950 5150 50  0001 C CNN
+F 4 "USBLC6-2SC6" H 1750 4800 50  0001 C CNN "MPN"
 	1    1750 4800
 	1    0    0    -1  
 $EndComp
@@ -224,6 +226,7 @@ F 0 "U6" H 5950 4100 50  0000 R CNN
 F 1 "CP2102N-A01-GQFN24" H 7350 2500 50  0000 R CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 6750 2500 50  0001 L CNN
 F 3 "http://www.silabs.com/support%20documents/technicaldocs/cp2102n-datasheet.pdf" H 6350 2250 50  0001 C CNN
+F 4 "CP2102N-A01-GQFN24" H 6300 3300 50  0001 C CNN "MPN"
 	1    6300 3300
 	1    0    0    -1  
 $EndComp
@@ -512,6 +515,7 @@ F 0 "Q2" H 9350 4625 50  0000 L CNN
 F 1 "BC817" H 9350 4550 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9350 4475 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 9150 4550 50  0001 L CNN
+F 4 "BC817-40WT1G" H 9150 4550 50  0001 C CNN "MPN"
 	1    9150 4550
 	1    0    0    -1  
 $EndComp
@@ -523,6 +527,7 @@ F 0 "Q3" H 9350 5525 50  0000 L CNN
 F 1 "BC817" H 9350 5450 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9350 5375 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 9150 5450 50  0001 L CNN
+F 4 "BC817-40WT1G" H 9150 5450 50  0001 C CNN "MPN"
 	1    9150 5450
 	1    0    0    1   
 $EndComp
